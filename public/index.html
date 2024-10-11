@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdateMe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="chatbox">
+            <div class="uppersection">
+                <div id="pic">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="name">
+                    <p id="u-name">My-Name</p> 
+                </div>
+            </div>
+            <div class="middlesection">
+            </div>
+            <div class="lowersection">
+                <div id="inputbox">
+                    <input id="ip" type="text" placeholder="Enter Message">
+                </div>
+                <div id="button">
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+</html>
