@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UpdateMe</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -17,9 +19,19 @@
                 <div id="name">
                     <p id="u-name">My-Name</p> 
                 </div>
+                <div id="location-filter">
+                    <button style="background-color: #015b5b; color: white;" onclick="toggleDropdown()" id="filter-button">Location</button>
+                    <div id="dropdown-menu" class="dropdown-content">
+                        <label><input type="checkbox" value="Hyderabad"> Hyderabad</label><br>
+                        <label><input type="checkbox" value="Bangalore"> Bangalore</label><br>
+                        <label><input type="checkbox" value="Chennai"> Chennai</label><br>
+                        <label><input type="checkbox" value="Vizag"> Vizag</label><br>
+                        <label><input type="checkbox" value="Kochi"> Kochi</label><br>
+                        <button style="margin-left: 65px; background-color: #015b5b; color: white;" onclick="applyLocationFilter()">Apply</button>
+                    </div>
+                </div>
             </div>
-            <div class="middlesection">
-            </div>
+            <div class="middlesection"></div>
             <div class="lowersection">
                 <div id="inputbox">
                     <input id="ip" type="text" placeholder="Enter Message">
@@ -33,4 +45,4 @@
     <script src="http://localhost:8000/socket.io/socket.io.js"></script>
     <script src="./js/client.js"></script>
 </body>
-</html>
+</html> 
